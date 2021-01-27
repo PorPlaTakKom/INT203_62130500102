@@ -16,15 +16,130 @@
     <script src="https://unpkg.com/vue@next"></script>
 </head>
 
-<body>
+<body class="bg-gray-200 bg-scroll"> 
+    <div class="max-w-screen mx-auto bg-white shadow-md">
+        <div class="flex justify-center text-sm font-bold font-sans">
 
-    <div id="app" class="h-screen w-full bg-gray-200 flex items-start justify-start">
-        <img src="./images/Squirtle.png" class="w-1/3 h-full">
-        <div class="w-full flex items-center justify-end">
-            <i class="material-icons">face</i>
-            <p class="font-semibold text-xl tracking-wider uppercase px-3">{{ msg }}​​</p>
+            <div class="w-28 h-20 text-center hover:bg-gray-500 hover:text-white">
+                <i class="material-icons mt-2">home</i>
+                <p>HOME</p>
+            </div>
+           
+            <div class="w-28 h-20 text-center bg-red-600 text-white"> 
+                <i class="material-icons mt-2">catching_pokemon</i>
+                <p>Pokédex</p>
+            </div>
+            <div class="w-28 h-20 text-center hover:bg-yellow-500 hover:text-white"> 
+                <i class="material-icons mt-2">games</i>
+                <p>Video Game & Apps</p>
+            </div>
+            <div class="w-28 h-20 text-center hover:bg-yellow-300 hover:text-white"> 
+                <i class="material-icons mt-2">style</i>
+                <p>Trading Card Game</p> 
+            </div>
+            <div class="w-28 h-20 text-center hover:bg-green-400 hover:text-white"> 
+                <i class="material-icons mt-2">live_tv</i>
+                <p>Pokemon TV</p> 
+            </div>
+            <div class="w-28 h-20 text-center hover:bg-blue-400 hover:text-white"> 
+                <i class="material-icons mt-2">emoji_events</i>
+                <p>Play! Pokemon Events</p> 
+            </div>
+            <div class="w-28 h-20 text-center hover:bg-blue-700 hover:text-white"> 
+                <i class="material-icons mt-2">article</i>
+                <p>News</p> 
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <span class="w-28 text-center bg-gray-500 rounded-bl-lg h-2"></span>
+            <span class="w-28 text-center bg-red-600 h-2"></span>
+            <span class="w-28 text-center bg-yellow-500 h-2"></span>
+            <span class="w-28 text-center bg-yellow-300 h-2"></span>
+            <span class="w-28 text-center bg-green-400 h-2"></span>
+            <span class="w-28 text-center bg-blue-400 h-2"></span>
+            <span class="w-28 text-center bg-blue-700 rounded-br-lg h-2"></span>
         </div>
     </div>
+
+    <div class="lg:max-w-screen-lg mx-auto bg-white h-agit shadow-lg">
+        <p class="text-3xl font-semibold text-gray-400 p-4">Pokédex</p>
+        <div class="flex flex-wrap justify-center p-1 rounded">
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#001</p>
+                    <p class="text-2xl font-semibold">Bulbasaur</p>
+                    <span class="text-sm bg-green-500 rounded-md py-0\.5 px-5">Grass</span>
+                    <span class="text-sm text-white bg-purple-400 rounded-md py-0\.5 px-5">Poison</span>
+                </div>
+            </button>
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#002</p>
+                    <p class="text-2xl font-semibold">Ivysaur</p>
+                    <span class="text-sm bg-green-500 rounded-md py-0\.5 px-5">Grass</span>
+                    <span class="text-sm text-white bg-purple-400 rounded-md py-0\.5 px-5">Poison</span>
+                </div>
+            </button>
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#003</p>
+                    <p class="text-2xl font-semibold">Venusaur</p>
+                    <span class="text-sm bg-green-500 rounded-md py-0\.5 px-5">Grass</span>
+                    <span class="text-sm text-white bg-purple-400 rounded-md py-0\.5 px-5">Poison</span>
+                </div>
+            </button>
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#004</p>
+                    <p class="text-2xl font-semibold">Charmander</p>
+                    <span class="text-sm bg-red-500 rounded-md py-0\.5 px-5">Fire</span>
+                </div>
+            </button>
+
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="Charmeleon">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#005</p>
+                    <p class="text-2xl font-semibold">Charmeleon</p>
+                    <span class="text-sm bg-red-500 rounded-md py-0\.5 px-5">Fire</span>
+                </div>
+            </button>
+            
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="Charizard">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#006</p>
+                    <p class="text-2xl font-semibold">Charizard</p>
+                    <span class="text-sm bg-red-500 rounded-md py-0\.5 px-5">Fire</span>
+                    <span class="text-sm text-white bg-gray-500 rounded-md py-0\.5 px-5">Flying</span>
+                </div>
+            </button>
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#007</p>
+                    <p class="text-2xl font-semibold">Charizard</p>
+                    <span class="text-sm bg-green-500 rounded-md py-0\.5 px-5">Water</span>
+                </div>
+            </button>
+            <button class="w-52 mt-10 m-5 transform hover:-translate-y-1 focus-within:outline-none">
+                <img class="w-full bg-gray-300 rounded-2xl" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="Wartortle">
+                <div class="ml-2 text-left">
+                    <p class="text-sm font-semibold text-gray-400 p-1">#008</p>
+                    <p class="text-2xl font-semibold">Wartortle</p>
+                    <span class="text-sm bg-green-500 rounded-md py-0\.5 px-5">Water</span>
+                </div>
+            </button>
+            
+        </div>
+        
+    </div>
+
 
     <!-- my main.js -->
     <script src="main.js"></script>
