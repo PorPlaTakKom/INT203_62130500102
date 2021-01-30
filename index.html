@@ -28,10 +28,6 @@
                 <i class="material-icons mt-2">catching_pokemon</i>
                 <p>Pokédex</p>
             </div>
-            <div class="w-28 text-center bg-red-600 text-white">
-                <i class="material-icons mt-2">catching_pokemon</i>
-                <p>Pokédex</p>
-            </div>
             <div class="w-28 text-center hover:bg-yellow-500 hover:text-white">
                 <i class="material-icons mt-2">games</i>
                 <p>Video Game & Apps</p>
@@ -72,15 +68,23 @@
 
             <div class="absolute top-55 left-0 w-full">
                 <div class="h-40 bg-gray-700">
-                    <form action="#">
-                        <div class="max-w-sm mx-auto p-1 pr-0 flex items-center">
-                            <input type="email" placeholder="jenny.rosen@example.com"
-                                class="flex-1 appearance-none rounded shadow p-3 text-grey-dark mr-2 focus:outline-none">
-                            <button type="submit"
-                                class="appearance-none bg-yellow-600 text-white text-base font-semibold tracking-wide uppercase p-3 rounded shadow hover:bg-indigo-light">Get
-                                started</button>
+                    <div class="flex justify-center space-x-2 py-5">
+                        <div class="flex text-white max-w-md">
+                            <form action="#">
+                                <label class="flex-none">Name or Number</label>
+                                <br>
+                                <input type="email" class="p-2 border-4 border-gray-400 text-black w-7/12">
+                                <button type="submit" class="ml-5 bg-yellow-600 text-white rounded hover:bg-yellow-700">
+                                    <span class="material-icons mx-auto p-2"> search </span>
+                                </button>
+                                <p>Use the Advanced Search to explore Pokémon by type, weakness, Ability, and more!</p>
+                            </form>
                         </div>
-                    </form>
+                        <div class="py-5 max-w-xs">
+                            <p class="text-white text-center text-sm bg-green-500 rounded-md py-3 px-5 hover:bg-green-600">Search for a Pokémon by name or using its National Pokédex number.</p>
+                        </div>
+                    </div>
+                    
                 </div>
                 <span class="flex bg-gray-500 h-8"></span>
                 <div class="flex justify-center">
