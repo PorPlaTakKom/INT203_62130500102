@@ -15,16 +15,21 @@
     <!-- Vue CDN -->
     <script src="https://unpkg.com/vue@next"></script>
 </head>
+</head>
 
 <body>
-
     <div id="app">
-        {{ msg }}
+        <div class="h-screen flex justify-center items-center bg-gray-200">
+            <div class="bg-blue-300 text-white p-3 lg:w-1/4 sm:w-4/4 md:w-2/4 rounded text-center py-8 hover:shadow-md cursor-pointer">
+                <div class="flex justify-center mb-2"> 
+                    <img v-bind:src="profileImage" class="rounded-full h-24 w-24 flex items-center justify-center"> 
+                </div>
+                    <h1 class="text-3xl">{{fullName}}</h1> <span class="text-1xl">{{position}}</span>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- my main.js -->
-    <script src="main.js"></script>
+    <script src="profile.js"></script>
 </body>
 
 </html>

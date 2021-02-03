@@ -3,6 +3,9 @@ const app = {
         return {
             msg: 'Hello, Vue3'
         }
+    },
+    created(){
+        console.log("created msg!!")
     }
 }
-Vue.createApp(app).mount('#app')
+let mountApp = Vue.createApp(app).mount('#app')
